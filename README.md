@@ -13,3 +13,5 @@ npm run start
 yarn install
 yarn start
 ```
+
+To start run the application in browser, open the file home.html from dist folder.
