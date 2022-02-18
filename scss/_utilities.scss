@@ -1,0 +1,12 @@
+@import "_config";
+
+.container {
+  max-width: $website-width;
+  padding: 0 0.5 rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+#header-home {
+  border: 2px solid $light-grey-color;
+}

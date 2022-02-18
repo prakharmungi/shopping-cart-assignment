@@ -1,0 +1,172 @@
+.container {
+  max-width: 1280px;
+  padding: 0 0.5 rem;
+  margin: auto;
+  overflow: hidden; }
+
+#header-home {
+  border: 2px solid #eeeeee; }
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+.item {
+  position: relative;
+  overflow: hidden;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px dotted #797f86; }
+  .item-description {
+    background-color: #eeeeee;
+    max-height: 100px;
+    height: 100px;
+    overflow: overlay; }
+  .item-name {
+    min-height: 60px;
+    font-weight: bold; }
+  .item-buy-btn {
+    background: #bf2957;
+    color: #fff;
+    border: none;
+    margin-left: auto;
+    padding: 1em; }
+  .item-price {
+    font-weight: bold;
+    padding: 15px 0; }
+
+.cart-header-section {
+  background-color: #323232;
+  color: #fff; }
+  .cart-header-section button {
+    color: #fff; }
+
+.modal-body .cart-item-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr; }
+
+.modal-body .cart-item-image {
+  width: 65px;
+  height: 65px; }
+
+.modal-body .reduce-count,
+.modal-body .increase-count {
+  background: #bf2957;
+  color: white;
+  border-radius: 50%;
+  margin-right: 16px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  display: inline-block; }
+
+.modal-body .cart-item-count {
+  margin-right: 16px; }
+
+.modal-body .item-total-price {
+  float: right; }
+
+.modal-footer button {
+  background-color: #bf2957;
+  color: #fff; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background: #fff; }
+
+a {
+  text-decoration: none;
+  color: #323232; }
+
+ul {
+  list-style: none; }
+
+img {
+  width: 300px; }
+
+#logo {
+  width: 140px;
+  height: 70px;
+  color: #fff;
+  margin-right: 100px;
+  text-transform: uppercase; }
+
+#main-nav {
+  display: flex;
+  padding-top: 1rem; }
+  #main-nav ul {
+    display: flex; }
+  #main-nav li {
+    padding: 2rem 1.5rem; }
+  #main-nav #nav-right-block {
+    padding-top: 0.5rem;
+    margin-left: auto; }
+    #main-nav #nav-right-block .cart-button {
+      display: block;
+      background-color: #eeeeee;
+      border: none; }
+      #main-nav #nav-right-block .cart-button i {
+        color: #bf2957; }
+      #main-nav #nav-right-block .cart-button .cart-items-count {
+        color: #323232; }
+    #main-nav #nav-right-block a:last-child {
+      display: block; }
+  #main-nav a {
+    text-decoration: none;
+    color: #797f86;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s; }
+
+#home-a .container {
+  position: relative; }
+  #home-a .container ul {
+    display: flex;
+    overflow: hidden; }
+  #home-a .container li {
+    display: block;
+    list-style: none; }
+    #home-a .container li img {
+      width: 1280px;
+      height: 235px; }
+  #home-a .container button.prev,
+  #home-a .container button.next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #333;
+    opacity: 50%;
+    width: 44px;
+    height: 44px; }
+  #home-a .container button.prev {
+    position: absolute;
+    top: 50%; }
+  #home-a .container button.next {
+    position: absolute;
+    right: 0;
+    top: 50%; }
+
+#home-b .category-info {
+  display: grid;
+  grid-gap: 1.2rem;
+  border-top: 2px solid #eeeeee;
+  border-radius: 5%; }
+  #home-b .category-info .explore-button {
+    background: #bf2957;
+    color: #fff;
+    border: none;
+    padding: 1em; }
+
+#home-b .bio {
+  padding: 0.8rem; }
+
+#plp-a ul {
+  background-color: #eeeeee; }
+  #plp-a ul li {
+    color: #323232;
+    border-bottom: 1px solid #797f86; }

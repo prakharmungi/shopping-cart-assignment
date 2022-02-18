@@ -1,0 +1,167 @@
+@import "_config";
+@import "_utilities";
+@import "item_grid";
+@import "cart";
+
+// General Styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-grey-color; //change
+}
+
+ul {
+  list-style: none; //change
+}
+
+// h2,
+// h3,
+// h4 {
+//   text-transform: uppercase;
+// }
+
+img {
+  width: 300px;
+}
+
+// Logo
+#logo {
+  width: 140px;
+  height: 70px;
+  color: #fff;
+  margin-right: 100px;
+  text-transform: uppercase;
+}
+
+// Main Nav section
+#main-nav {
+  display: flex;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 2rem 1.5rem;
+  }
+
+  #nav-right-block {
+    padding-top: 0.5rem;
+    margin-left: auto;
+    .cart-button {
+      display: block;
+      background-color: $light-grey-color;
+      border: none;
+      i {
+        color: $cherry-red-color;
+      }
+      .cart-items-count {
+        color: $dark-grey-color;
+      }
+    }
+    a:last-child {
+      display: block;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $medium-grey-color;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover {
+      // border-color: $medium-color;
+    }
+
+    &.current {
+      // border-color: $main-color;
+    }
+  }
+}
+
+// Home Sections
+#home {
+  // Home A
+  &-a {
+    .container {
+      position: relative;
+      ul {
+        display: flex;
+        overflow: hidden;
+      }
+      li {
+        display: block;
+        list-style: none;
+        img {
+          width: $website-width;
+          height: 235px;
+        }
+      }
+      button.prev,
+      button.next {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        background-color: #333;
+        opacity: 50%;
+        width: 44px;
+        height: 44px;
+      }
+      button.prev {
+        position: absolute;
+        top: 50%;
+      }
+      button.next {
+        position: absolute;
+        right: 0;
+        top: 50%;
+      }
+    }
+  }
+  // Home B
+  &-b {
+    .category-info {
+      display: grid;
+      grid-gap: 1.2rem;
+      border-top: 2px solid $light-grey-color;
+      border-radius: 5%;
+
+      .explore-button {
+        background: $cherry-red-color;
+        color: $white-color;
+        border: none;
+        padding: 1em;
+      }
+    }
+
+    .bio {
+      padding: 0.8rem;
+    }
+  }
+}
+
+// PLP Section
+
+#plp-a {
+  ul {
+    background-color: $light-grey-color;
+    li {
+      color: $dark-grey-color;
+      border-bottom: 1px solid $medium-grey-color;
+    }
+  }
+}

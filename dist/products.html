@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Sabka Bazaar</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header-home">
+      <!--change-->
+      <div class="container">
+        <nav id="main-nav">
+          <img src="../static/images/logo.png" alt="Brand logo" id="logo" />
+          <ul>
+            <li><a href="home.html" class="current">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+          </ul>
+          <div id="nav-right-block">
+            <a href="#">SignIn</a>
+            <a href="#">Register</a>
+            <button
+              type="button"
+              class="btn btn-info btn-lg cart-button"
+              data-toggle="modal"
+              data-target="#myModal"
+              onclick="openCart()"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="cart-items-count"></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Section A: Offers  -->
+    <section id="plp-a" class="text-center py-3">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 4fr">
+          <ul style="display: flex; flex-direction: column"></ul>
+          <div class="items">
+            <div class="item">
+              <h4 class="item-name"></h4>
+              <img class="item-image" src="" alt="" />
+              <div class="item-description"></div>
+              <div style="display: flex">
+                <div class="item-price"></div>
+                <div class="item-buy-btn">Buy Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Add to cart: Model section -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header cart-header-section">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h4 class="modal-title cart-heading"></h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <h4 style="text-align: center">
+              Promo code can be applied on payment page
+            </h4>
+            <button type="button" class="btn btn-default" style="width: 100%">
+              <span style="float: left">Proceed to CheckOut</span
+              ><span class="cart-total-value" style="float: right"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <!-- <footer id="main-footer">
+      <div class="footer-content container">
+        <p>Copyright &copy; 2019. All Rights Reserved</p>
+        <div class="social">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </div>
+    </footer -->
+
+    <!-- Type Effect Tutorial: https://www.youtube.com/watch?v=POX3dT-pB4E -->
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

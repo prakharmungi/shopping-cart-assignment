@@ -1,0 +1,36 @@
+.items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  border-right: 1px solid $light-grey-color;
+  border-bottom: 1px dotted $medium-grey-color;
+
+  &-description {
+    background-color: $light-grey-color;
+    max-height: 100px;
+    height: 100px;
+    overflow: overlay;
+  }
+
+  &-name {
+    min-height: 60px;
+    font-weight: bold;
+  }
+
+  &-buy-btn {
+    background: $cherry-red-color;
+    color: #fff;
+    border: none;
+    margin-left: auto;
+    padding: 1em;
+  }
+
+  &-price {
+    font-weight: bold;
+    padding: 15px 0;
+  }
+}

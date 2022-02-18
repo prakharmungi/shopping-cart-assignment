@@ -5,11 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "canned -p 5000 ./server"
+    "start": "canned -p 5000 ./server",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "canned": "^0.3.12"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1"
   }
 }
